@@ -1,0 +1,14 @@
+{
+   "name": "Youtube skip auto pause",
+   "manifest_version": 2,
+   "version": "0.0.1",
+   "description": "This extension auto click YES button when youtube ask you: \"Video paused. Continue watching?\"",
+   "content_scripts": [{
+      "matches": [
+         "https://www.youtube.com/watch*"
+      ],
+      "js": [
+         "content.js"
+      ]
+   }]
+}
